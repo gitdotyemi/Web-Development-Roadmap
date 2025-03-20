@@ -1,26 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>CSS Flag Project</title>
-  <style>
-    /* Write your CSS Code here */
-    .flag {
-      background-color: red;
-      height: 400px;
-      width: 50%;
-      margin-left: 25%;
-      margin-top: 150px;
-    }
-
-    .of-laos {
-      background-color: white;
-    }
-    
-  </style>
-</head>
-
 <!-- 
   IMPORTANT! Do not change any HTML
 Don't add any classes/ids/elements 
@@ -31,11 +8,60 @@ Hint 2: You can use CSS inspection to get the colors from
 https://appbrewery.github.io/flag-of-laos/
 -->
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Write your CSS Code here */
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    .flag {
+      position: relative;
+      background-color: #CE1126;
+      width: 900px;
+      height: 600px;
+      border: 5px solid white;
+    }
+
+    .flag > div {
+      background-color: #002868;
+      position: absolute;
+      top: 150px;
+      width: 900px;
+      height: 300px;
+    }
+
+    .flag > div > div  {
+      background-color: white;
+      color: black;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50px;
+      left: 350px;
+    }
+
+    p {
+      font-size: 5rem;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
 <body>
   <div class="flag">
     <p>The Flag</p>
     <div>
-      <div class="of-laos">
+      <div>
         <p>of Laos</p>
       </div>
     </div>
